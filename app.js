@@ -141,10 +141,11 @@ startButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
+    console.log(currentQuestionIndex)
     currentQuestionIndex++;
     setNextQuestion();
 });
-
+      
 function startGame() {
     shuffleQuestions = shuffle([...questions]);
     // shuffle(shuffleQuestions);
